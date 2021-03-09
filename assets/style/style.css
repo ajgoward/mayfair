@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
+/*  General styling */
 body{
     text-transform: uppercase;
 }
+
+li{
+    font-size: 15px;
+    /* padding-bottom: 5px; */
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: #ffff !important;
+}
+/* landing image styling */
+
 .hero-banner{
     height: 100vh;
     display: flex;
@@ -13,7 +37,7 @@ body{
 
 
 .landing-image{
-    background-image: linear-gradient(#86a6bd8f, #86a6bd85), url("../images/hero1.jpg");
+    background-image: linear-gradient(#86a6bdbd, #86a6bdcb), url("../images/hero1.jpg");
     
 }
 
@@ -21,9 +45,6 @@ body{
     background-color: transparent;
 }
 
-.fish{
-    width: 300px;
-}
 
 .hero-text{
     color: #ffff;
@@ -38,14 +59,6 @@ body{
     padding-bottom: 50px;
 }
 
-.logo{
-    font-family: 'Open Sans', sans-serif;
-}
-/*
-.btn-outline-light{
-    border-width: 4px;
-    font-size: 40px;
-}*/
 
 .button {
     background-color: transparent;
@@ -65,11 +78,12 @@ body{
     
   }
 
-  .button:hover {
+.button:hover {
     background-color: cyan; /* Green */
-  }
+}
 
-  .content-container {
+/* container styling */
+.content-container {
     padding-top: 150px;
     padding-bottom: 75px;
 }
@@ -83,13 +97,20 @@ body{
     background-color: #f0f3f6;
     color: #38424e;
     height: 100vh;
-    padding-top: 150px;
-   
-    
+    padding-top: 150px;   
 }
+
 .award-container{
     padding-top: 80px;
 }
+
+.container-wrapper-bluegrey{
+    background-color: #38424e;
+    color: #ffff;
+    padding-left:30px
+}
+
+/* linebreak styling */
 
 .linebreak{
     margin-top: 40px;
@@ -97,6 +118,8 @@ body{
     height: 5px;
     border: 0;
     background-color: #38424e;}
+
+/* image styling */
 
 .img-thumbnail{
     height: 300px;
@@ -107,62 +130,113 @@ body{
     background-color: transparent;
 }
 
+.logo2{
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    transform: translate(50%, -20%);
+}
+.quote-fish{
+    width: 400px;
+    transform: translateX(100%);
+    position: absolute;
+    opacity: 0.2;
+}
+
+/*  text styling */
+
 .locations{
     margin-top: 60px;
     font-size: 20px;
 }
 
-.logo2{
-    position: absolute;
-    z-index: 1;
-    top: 6px;
-    transform: translateX(50%);
+.page-header{
+    font-size: 30px ;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 }
-.quote-fish{
-width: 400px;
-    z-index: -0.5;
-    transform: translateX(100%);
-    position: absolute;
-    opacity: 0.2;}
+
+.about-text{
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.read-more{
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+
 
 blockquote{
     padding-top: 60px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-
+    letter-spacing: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
 }
 
-.container-wrapper-bluegrey{
-    background-color: #38424e;
-    color: #ffff;
+.quote-auth{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 15px;
 }
+
+
 
 .footer-headings{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
     letter-spacing: 2px;
     padding-top: 30px;
     padding-bottom: 20px;
     font-family: 'Lato', sans-serif;
 }
 
-li{
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: 'Open Sans', sans-serif;
+
+/* padding on images */
+
+.padding-right{
+    padding-right: 200px;
 }
 
-h3{
-    font-size: 20px;
+.padding-left{
+    padding-left: 200px;
 }
 
-@media only screen and (max-width: 768px) {
+
+/* social link styling */
+
+.fab, .far {
+    font-weight: 400;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .padding-left{
+        padding-left: 0;
+    }
+
+    .padding-right{
+        padding-right: 0;
+    }
     .quote-fish{
         transform: translateX(0);
     }
 
     .logo2{
-        transform: translateX(0);
+        display: none;
     }
 
     .hero-quote{
@@ -191,6 +265,11 @@ h3{
         
         padding-top: 20px;
         padding-bottom: 20px;
+        height: auto !important;
+    }
+
+    .content-container{
+        padding-top: 20px;
     }
 
     .footer-headings{
