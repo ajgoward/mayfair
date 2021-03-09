@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+body{
+    text-transform: uppercase;
+}
+.hero-banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.landing-image{
+    background-image: linear-gradient(#86a6bd8f, #86a6bd85), url("hero1.jpg");
+    
+}
+
+.jumbotron{
+    background-color: transparent;
+}
+
+.fish{
+    width: 300px;
+}
+
+.hero-text{
+    color: #ffff;
+    
+}
+
+.hero-quote{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    font-family: 'Open Sans', sans-serif;
+}
+/*
+.btn-outline-light{
+    border-width: 4px;
+    font-size: 40px;
+}*/
+
+.button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    border-width: 4px;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: 'Lato', sans-serif;
+    
+  }
+
+  .button:hover {
+    background-color: cyan; /* Green */
+  }
+
+  .content-container {
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+.container-wrapper-grey{
+    background-color: #cbd6de;
+    color: #38424e;
+}
+
+.container-wrapper-lightgrey{
+    background-color: #f0f3f6;
+    color: #38424e;
+    height: 100vh;
+    padding-top: 150px;
+   
+    
+}
+.award-container{
+    padding-top: 80px;
+}
+
+.linebreak{
+    margin-top: 40px;
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #38424e;}
+
+.img-thumbnail{
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 30px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.locations{
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.logo2{
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    transform: translateX(50%);
+}
+.quote-fish{
+width: 400px;
+    z-index: -0.5;
+    transform: translateX(100%);
+    position: absolute;
+    opacity: 0.2;}
+
+blockquote{
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container-wrapper-bluegrey{
+    background-color: #38424e;
+    color: #ffff;
+}
+
+.footer-headings{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .quote-fish{
+        transform: translateX(0);
+    }
+
+    .logo2{
+        transform: translateX(0);
+    }
+
+    .hero-quote{
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .button{
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+
+    .fish{
+        width: 100px;
+    }
+
+    .mayfair-text{
+        height: 100px;
+    }
+
+    blockquote{
+        font-size: 16px;
+    }
+
+    .container-wrapper-lightgrey{
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-headings{
+        font-size: 10px;
+    }
+
+    li{
+        font-size: 8px;
+        font-weight: lighter;
+    }
+    h3 {
+        font-size: 10px;
+    }
+}
